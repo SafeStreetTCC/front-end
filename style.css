@@ -9,13 +9,14 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
-    color: #333;
+    color: black;
+    
 }
 
 /* Cabeçalho */
 header {
-    background-color: #002147; /* Azul marinho */
-    padding: 20px;
+    background-color: black; /* Azul marinho */
+    padding: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,7 +24,7 @@ header {
 
 header .logo img {
     width: 120px;
-    color: white;
+    color: royalblue;
 }
 
 nav ul {
@@ -33,7 +34,7 @@ nav ul {
 }
 
 nav ul li a {
-    color: #ffffff;
+    color: royalblue;
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
@@ -44,22 +45,38 @@ nav ul li a:hover {
 }
 
 /* Seção sobre nós */
-.about {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.about h1 {
-    font-size: 36px;
-    color: #002147; /* Azul marinho */
-    margin-bottom: 20px;
-}
-
-.about p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
+.sobre-nos-container {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 70px;
+    background-color: #002147;
+  }
+  
+  .imagem-sobre-nos {
+    max-width: 40%; 
+    height: auto; 
+    border-radius: 15px;
+    border: 3px solid #003366; /* Cor da borda */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: all 0.3s ease;
+  }
+  
+  .texto-sobre-nos {
+    max-width: 55%; 
+    font-family: Arial, sans-serif; 
+  }
+  
+  .texto-sobre-nos h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .texto-sobre-nos p {
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+  
 
 /* Seção dos criadores */
 .creators {
