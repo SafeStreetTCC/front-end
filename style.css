@@ -1,0 +1,108 @@
+/* Resetando margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #002147; /* Azul marinho */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 120px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Seção sobre nós */
+.about {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 36px;
+    color: #002147; /* Azul marinho */
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Seção dos criadores */
+.creators {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.creators h2 {
+    font-size: 30px;
+    color: #002147;
+    margin-bottom: 20px;
+}
+
+.creator-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.creator img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.creator p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #002147;
+}
+
+
+/* Rodapé */
+footer {
+    background-color: #002147; /* Azul marinho */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 14px;
+}

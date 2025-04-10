@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com Mapa</title>    
+
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* Cabeçalho */
+header {
+    background-color: #002147; /* Azul marinho */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 120px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+#container {
+    border: 5px solid #333; /* Borda ao redor do site */
+    height: 100vh; /* O container ocupa toda a altura da tela */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilizando a área do topo com a frase "Você está aqui" */
+#topo {
+    background-color:  #002147; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 20px;
+    text-align: center;
+}
+
+#topo h1 {
+    margin: 0; /* Remover margem do título */
+    font-size: 24px; /* Tamanho da fonte */
+}
+
+/* Estilizando o container do mapa */
+#mapa-container {
+    position: relative;
+    flex-grow: 1; /* O mapa ocupa o espaço restante */
+}
+
+/* Estilizando o mapa */
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+/* Rodapé */
+footer {
+    background-color: #002147; /* Azul marinho */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 14px;
+}
+</style>
+<body>
+	<header>
+        <div class="logo">
+            <img src="??" alt="Safe Street">
+        </div>
+        <nav>
+            <ul>
+				<li><a href="#">login</a></li>
+                <li><a href="index.html">home</a></li>
+                <li><a href="forum.html">Fórum</a></li>
+            </ul>
+        </nav>
+    </header>
+	<div id="container">
+        <div id="topo">
+            <h1>Você está aqui</h1>
+        </div>
+    <div id="mapa-container">
+        <!-- Espaço para o mapa interativo -->
+        <div id="map"></div>
+		
+    </div>
+
+	<footer>
+        <p>&copy; 2025 Safe Street | Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
