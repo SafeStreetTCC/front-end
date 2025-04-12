@@ -9,48 +9,65 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
-    color: black;
+   
     
 }
 
 /* Cabeçalho */
 header {
-    background-color: black; /* Azul marinho */
-    padding: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-header .logo img {
-    width: 120px;
-    color: royalblue;
-}
-
-nav ul {
+    padding: 20px 40px;
+    background-color: #003366; /* azul escuro confiável */
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo img {
+    height: 120px;
+    object-fit: contain;
+  }
+  
+  nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
-}
-
-nav ul li a {
-    color: royalblue;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+  nav ul li a {
     text-decoration: none;
-    font-weight: bold;
+    color: #ffffff;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #7d9ef7; /* azul claro do seu gradiente */
+  }
+  
+  /* Destaque especial pro nome "Safe" */
+  nav ul li:first-child {
+    font-weight: 700;
     font-size: 18px;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
+    color: #7d9ef7;
+    pointer-events: none;
+  }
+  
 /* Seção sobre nós */
 .sobre-nos-container {
     display: flex;
     align-items: center; 
     justify-content: space-between; 
     padding: 70px;
-    background-color: #002147;
+
+    background: linear-gradient(90deg, #003366, #7d9ef7);
   }
   
   .imagem-sobre-nos {
@@ -65,16 +82,126 @@ nav ul li a:hover {
   .texto-sobre-nos {
     max-width: 55%; 
     font-family: Arial, sans-serif; 
+    color: #002147;;
+    background: url('img/cartaz-de-fundo-gradiente-cinza-bege-pano-de-fundo-textura-de-ruido-cabecalho-da-pagina-da-web-design-de-banner-largo_284753-2682.avif') center;
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+    animation: animate 8s linear infinite;
+   
   }
   
   .texto-sobre-nos h2 {
     font-size: 2em;
     margin-bottom: 10px;
+   
+  
+
+  }
+  @keyframes animate{
+    to{
+        background-position-x: -200px;
+    }
   }
   
   .texto-sobre-nos p {
     font-size: 1.2em;
     line-height: 1.5;
+  }
+  .nossa-missao {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 70px;
+    background: linear-gradient(90deg, #003366, #7d9ef7);
+  }
+  
+
+  
+  .texto-missao {
+    max-width: 55%; 
+    font-family: Arial, sans-serif; 
+    color: #002147;;
+    background: url('img/cartaz-de-fundo-gradiente-cinza-bege-pano-de-fundo-textura-de-ruido-cabecalho-da-pagina-da-web-design-de-banner-largo_284753-2682.avif') center;
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+    animation: animate 8s linear infinite;
+  }
+  
+  .texto-missao h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .texto-missao p {
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+  
+
+  .fundo-cinza {
+    background-color: gainsboro; 
+    padding: 80px 20px;        
+  }
+ .como-funciona {
+        max-width: 1000px;
+        margin: 80px auto;
+        padding: 80px 40px;
+        background-color: #f4f6f802;
+        border-radius: 12px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+      }
+      
+  
+  
+  .como-funciona h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #003366;
+    margin-bottom: 60px;
+  }
+  
+  .item {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+  }
+  
+  .item.invertido {
+    flex-direction: row-reverse;
+  }
+  
+  .texto {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .texto h3 {
+    font-size: 22px;
+    color: #003366;
+    margin-bottom: 10px;
+  }
+  
+  .texto p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .imagem {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+  }
+  
+  .imagem img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   }
   
 
