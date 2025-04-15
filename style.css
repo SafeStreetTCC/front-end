@@ -1,252 +1,346 @@
-/* Resetando margens e paddings */
+:root {
+  --azul-escuro: #003366;
+  --azul-claro: #7d9ef7;
+  --texto-primario: #002147;
+  --fundo-claro: #ffffff;
+  --fundo-cinza: #f4f4f4;
+  --cinza-medio: gainsboro;
+  --sombra-suave: rgba(0, 0, 0, 0.1);
+  --transicao-padrao: all 0.3s ease;
+}
+
+.dark-mode {
+  --fundo-claro: #121212;
+  --fundo-cinza: #1e1e1e;
+  --texto-primario: #e0e0e0;
+  --azul-claro: #4da8ff;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: var(--transicao-padrao);
 }
 
-/* Corpo da página */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
-   
-    
+  font-family: Arial, sans-serif;
+  background-color: var(--fundo-claro);
+  color: var(--texto-primario);
 }
 
-/* Cabeçalho */
+/* Header */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    background-color: #003366; /* azul escuro confiável */
-    color: #ffffff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .logo img {
-    height: 120px;
-    object-fit: contain;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    font-weight: 500;
-    font-size: 16px;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #ffffff;
-    transition: color 0.3s ease;
-  }
-  
-  nav ul li a:hover {
-    color: #7d9ef7; /* azul claro do seu gradiente */
-  }
-  
-  /* Destaque especial pro nome "Safe" */
-  nav ul li:first-child {
-    font-weight: 700;
-    font-size: 18px;
-    color: #7d9ef7;
-    pointer-events: none;
-  }
-  
-/* Seção sobre nós */
-.sobre-nos-container {
-    display: flex;
-    align-items: center; 
-    justify-content: space-between; 
-    padding: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: var(--azul-escuro);
+  color: #fff;
+  box-shadow: 0 4px 10px var(--sombra-suave);
+}
 
-    background: linear-gradient(90deg, #003366, #7d9ef7);
-  }
-  
-  .imagem-sobre-nos {
-    max-width: 40%; 
-    height: auto; 
-    border-radius: 15px;
-    border: 3px solid #003366; /* Cor da borda */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
-    transition: all 0.3s ease;
-  }
-  
-  .texto-sobre-nos {
-    max-width: 55%; 
-    font-family: Arial, sans-serif; 
-    color: #002147;;
-    background: url('img/cartaz-de-fundo-gradiente-cinza-bege-pano-de-fundo-textura-de-ruido-cabecalho-da-pagina-da-web-design-de-banner-largo_284753-2682.avif') center;
-    background-size: cover;
-    background-clip: text;
-    color: transparent;
-    animation: animate 8s linear infinite;
-   
-  }
-  
-  .texto-sobre-nos h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-   
-  
+.logo img {
+  height: 120px;
+  object-fit: contain;
+}
 
-  }
-  @keyframes animate{
-    to{
-        background-position-x: -200px;
-    }
-  }
-  
-  .texto-sobre-nos p {
-    font-size: 1.2em;
-    line-height: 1.5;
-  }
-  .nossa-missao {
-    display: flex;
-    align-items: center; 
-    justify-content: space-between; 
-    padding: 70px;
-    background: linear-gradient(90deg, #003366, #7d9ef7);
-  }
-  
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
 
-  
-  .texto-missao {
-    max-width: 55%; 
-    font-family: Arial, sans-serif; 
-    color: #002147;;
-    background: url('img/cartaz-de-fundo-gradiente-cinza-bege-pano-de-fundo-textura-de-ruido-cabecalho-da-pagina-da-web-design-de-banner-largo_284753-2682.avif') center;
-    background-size: cover;
-    background-clip: text;
-    color: transparent;
-    animation: animate 8s linear infinite;
-  }
-  
-  .texto-missao h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-  }
-  
-  .texto-missao p {
-    font-size: 1.2em;
-    line-height: 1.5;
-  }
-  
+nav ul li {
+  font-weight: 500;
+  font-size: 16px;
+}
 
-  .fundo-cinza {
-    background-color: gainsboro; 
-    padding: 80px 20px;        
-  }
- .como-funciona {
-        max-width: 1000px;
-        margin: 80px auto;
-        padding: 80px 40px;
-        background-color: #f4f6f802;
-        border-radius: 12px;
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
-      }
-      
-  
-  
-  .como-funciona h2 {
-    text-align: center;
-    font-size: 32px;
-    color: #003366;
-    margin-bottom: 60px;
-  }
-  
-  .item {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    margin-bottom: 60px;
-    flex-wrap: wrap;
-  }
-  
-  .item.invertido {
-    flex-direction: row-reverse;
-  }
-  
-  .texto {
-    flex: 1;
-    min-width: 300px;
-  }
-  
-  .texto h3 {
-    font-size: 22px;
-    color: #003366;
-    margin-bottom: 10px;
-  }
-  
-  .texto p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #333;
-  }
-  
-  .imagem {
-    flex: 1;
-    min-width: 300px;
-    text-align: center;
-  }
-  
-  .imagem img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  }
-  
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
 
-/* Seção dos criadores */
+nav ul li a:hover {
+  color: var(--azul-claro);
+}
+
+nav ul li:first-child {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--azul-claro);
+  pointer-events: none;
+}
+
+/* Sobre Nós */
+.sobre-nos-container, .nossa-missao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 70px;
+  background: linear-gradient(90deg, var(--azul-escuro), var(--azul-claro));
+  flex-wrap: wrap;
+}
+
+.imagem-sobre-nos {
+  max-width: 40%;
+  border-radius: 15px;
+  border: 3px solid var(--azul-escuro);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.texto-sobre-nos, .texto-missao {
+  max-width: 55%;
+  background: url('img/cartaz-de-fundo-gradiente-cinza-bege-pano-de-fundo-textura-de-ruido-cabecalho-da-pagina-da-web-design-de-banner-largo_284753-2682.avif') center;
+  background-size: cover;
+  background-clip: text;
+  color: transparent;
+  animation: animate 8s linear infinite;
+}
+
+.texto-sobre-nos h2, .texto-missao h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.texto-sobre-nos p, .texto-missao p {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+@keyframes animate {
+  to {
+    background-position-x: -200px;
+  }
+}
+
+/* Como funciona */
+.fundo-cinza {
+  background-color: var(--cinza-medio);
+  padding: 80px 20px;
+}
+
+.como-funciona {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 80px 40px;
+  background-color: #f4f6f802;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.como-funciona h2 {
+  text-align: center;
+  font-size: 32px;
+  color: var(--azul-escuro);
+  margin-bottom: 60px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.item.invertido {
+  flex-direction: row-reverse;
+}
+
+.item[data-hidden="true"] {
+  display: none;
+}
+
+.texto h3 {
+  font-size: 22px;
+  color: var(--azul-escuro);
+  margin-bottom: 10px;
+}
+
+.texto p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.imagem img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Criadores */
 .creators {
-    background-color: #f4f4f4;
-    padding: 40px 20px;
-    text-align: center;
+  background-color: var(--fundo-cinza);
+  padding: 40px 20px;
+  text-align: center;
 }
 
 .creators h2 {
-    font-size: 30px;
-    color: #002147;
-    margin-bottom: 20px;
+  font-size: 30px;
+  color: var(--texto-primario);
+  margin-bottom: 20px;
 }
 
 .creator-list {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-    justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-items: center;
 }
 
 .creator img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.creator img:hover {
+  transform: scale(1.05);
 }
 
 .creator p {
-    margin-top: 10px;
-    font-size: 18px;
-    color: #002147;
+  margin-top: 10px;
+  font-size: 18px;
+  color: var(--texto-primario);
 }
 
-
-/* Rodapé */
+/* Footer */
 footer {
-    background-color: #002147; /* Azul marinho */
-    color: #ffffff;
-    text-align: center;
-    padding: 20px;
+  background-color: var(--texto-primario);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
 }
 
 footer p {
-    font-size: 14px;
+  font-size: 14px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .sobre-nos-container, .nossa-missao, .item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .imagem-sobre-nos {
+    max-width: 100%;
+  }
+
+  .texto-sobre-nos, .texto-missao {
+    max-width: 100%;
+  }
+}
+.fundo-azul {
+  background: linear-gradient(90deg, #003366, #7d9ef7);
+  padding: 70px;
+}
+
+.texto-visao {
+  max-width: 900px;
+  margin: 0 auto;
+  color: #002147;
+  font-family: Arial, sans-serif;
+  background: url('img/cartaz-de-fundo-gradiente-cinza-bege-pano-de-fundo-textura-de-ruido-cabecalho-da-pagina-da-web-design-de-banner-largo_284753-2682.avif') center;
+  background-size: cover;
+  background-clip: text;
+  color: transparent;
+  animation: animate 8s linear infinite;
+}
+
+.texto-visao h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: transparent;
+}
+
+.texto-visao p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+/* Botão do modo escuro */
+.toggle-dark {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #fff;
+  margin-left: 20px;
+  transition: transform 0.2s ease;
+}
+
+.toggle-dark:hover {
+  transform: scale(1.1);
+}
+
+/* Modo escuro geral */
+.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.dark-mode header {
+  background-color: #1a1a1a;
+}
+
+.dark-mode nav ul li a {
+  color: #ccc;
+}
+
+.dark-mode nav ul li a:hover {
+  color: #7d9ef7;
+}
+
+.dark-mode .sobre-nos-container,
+.dark-mode .nossa-missao {
+  background: linear-gradient(90deg, #1a1a1a, #2c3e50);
+}
+
+.dark-mode .texto-sobre-nos,
+.dark-mode .texto-missao {
+  color: #f0f0f0;
+  background: none;
+  -webkit-background-clip: unset;
+}
+
+.dark-mode .fundo-cinza {
+  background-color: #1e1e1e;
+}
+
+.dark-mode .como-funciona {
+  background-color: #2c2c2c;
+  box-shadow: none;
+}
+.dark-mode .como-funciona p{
+  color: beige;
+
+}
+body.dark-mode .sobre-nos-container,
+body.dark-mode .nossa-missao,
+body.dark-mode .nossa-visao,
+body.dark-mode .privacidade {
+  background: linear-gradient(90deg, #112240, #1e2a38);
+}
+
+.dark-mode .creators {
+  background-color: #2c2c2c;
+}
+
+.dark-mode .creator p {
+  color: #ddd;
+}
+
+.dark-mode footer {
+  background-color: #111;
+  color: #ccc;
 }
