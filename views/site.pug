@@ -1,0 +1,222 @@
+doctype html
+html(lang="pt-BR")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Safe Street
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap")
+    link(rel="stylesheet", href="/stylesheets/style.css")
+    
+    //favicon diferente tamanhos
+    link(rel="icon", type="image/png", href="/img/favicon16.png", sizes="16x16")
+    link(rel="icon", type="image/png", href="/img/favicon32.png", sizes="32x32")
+    link(rel="icon", type="image/png", href="/img/favicon192.png", sizes="192x192")
+    link(rel="icon", type="image/png", href="/img/favicon512.png", sizes="512x512")
+  body
+    header.header
+      .container.header-container
+        .logo
+          img(src="/img/LogoCnome.png", alt="Logo Safe Street")
+
+        .nav-container
+          nav.main-nav
+            ul#menu.menu
+              li.menu-item: a.menu-link(href="/") SafeStreet
+              li.menu-item: a.menu-link(href="/index") Mapa
+              li.menu-item: a.menu-link(href="#atualizacoes") Atualizações
+          button#toggle-dark.toggle-dark(title="Alternar modo escuro")
+            span.icon-dark 🌙
+            span.icon-light ☀️
+
+    main.main
+      section.hero
+        .container
+          .sobre-nos-container
+            .texto-sobre-nos
+              h1.section-title.gold-accent Sobre o Safe Street
+              p.section-text Safe Street é um aplicativo inovador criado com o objetivo de melhorar a segurança nas cidades, permitindo que os usuários identifiquem e compartilhem áreas de risco em tempo real.
+            .imagem-sobre-nos
+              img.hero-image(src="/img/Dark-Mode.png", alt="Imagem sobre o Safe Street")
+
+      section.nossa-missao
+        .container
+          .missao-content
+            .texto-missao
+              h2.section-title Nossa Missão
+              p.section-text Nossa missão é ajudar as pessoas a identificar e se proteger contra áreas de risco, proporcionando uma plataforma colaborativa de relatos e mapeamento de crimes.
+            .missao-decoration
+              .decoration-circle
+
+      section.como-funciona
+        .container
+          h2.section-title.text-center.gold-accent Como funciona
+
+          .feature-grid
+            .feature-card
+              .feature-icon
+                img(src="/img/relato.png", alt="Relatos de usuários")
+              .feature-content
+                h3.feature-title Relatos de Usuários
+                p.feature-text Os usuários relatam incidentes, ajudando a mapear zonas críticas da cidade.
+
+            .feature-card
+              .feature-icon
+                img(src="/img/comunidade.png", alt="Comunidade de Segurança")
+              .feature-content
+                h3.feature-title Comunidade de Segurança
+                p.feature-text Compartilhamento de experiências, dicas e alertas entre os cidadãos.
+
+            .feature-card
+              .feature-icon
+                img(src="/img/mapa.png", alt="Mapa de áreas de risco")
+              .feature-content
+                h3.feature-title Mapa de Áreas de Risco
+                p.feature-text O app cria um mapa interativo baseado em relatos, destacando pontos de atenção.
+
+      section.nossa-visao
+        .container
+          .visao-content
+            h2.section-title Nossa Visão
+            p.section-text Acreditamos que a segurança pública deve ser uma responsabilidade compartilhada, e que a colaboração entre cidadãos pode ser uma força poderosa para reduzir os riscos nas ruas. Nossa visão é construir uma comunidade engajada e informada, onde cada pessoa tem o poder de contribuir para um ambiente mais seguro.
+
+      section.diferenciais
+        .container
+          h2.section-title.text-center O Que Nos Diferencia
+
+          .diferenciais-grid
+            .diferencial-card
+              .diferencial-icon
+                svg.icon(viewBox="0 0 24 24")
+                  path(d="M21 11H3V9H21V11ZM21 15H3V13H21V15Z")
+              h3.diferencial-title Interatividade
+              p.diferencial-text Ao contrário de outras plataformas, o Safe Street coloca o poder nas mãos dos usuários, permitindo que eles não só compartilhem informações, mas também aprendam sobre áreas de risco com base na experiência coletiva.
+
+            .diferencial-card
+              .diferencial-icon
+                svg.icon(viewBox="0 0 24 24")
+                  path(d="M12 1L21 5V11C21 16.55 17.16 21.74 12 23C6.84 21.74 3 16.55 3 11V5L12 1ZM12 3.18L5 6.3V11C5 15.63 8.14 19.93 12 21C15.86 19.93 19 15.63 19 11V6.3L12 3.18Z")
+              h3.diferencial-title Foco na Prevenção
+              p.diferencial-text Nosso objetivo não é apenas fornecer dados, mas também ajudar na prevenção de crimes, ao alertar as pessoas sobre situações de risco antes que algo aconteça.
+
+            .diferencial-card
+              .diferencial-icon
+                svg.icon(viewBox="0 0 24 24")
+                  path(d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 5C13.66 5 15 6.34 15 8C15 9.66 13.66 11 12 11C10.34 11 9 9.66 9 8C9 6.34 10.34 5 12 5ZM12 19.2C9.5 19.2 7.29 17.92 6 15.98C6.03 13.99 10 12.9 12 12.9C13.99 12.9 17.97 13.99 18 15.98C16.71 17.92 14.5 19.2 12 19.2Z")
+              h3.diferencial-title Apoio a Cidadãos e Comunidades
+              p.diferencial-text Além de proteger, o Safe Street busca fortalecer a confiança entre os moradores e as autoridades locais, criando um ambiente mais colaborativo e seguro para todos.
+
+      section.privacidade
+        .container
+          .privacidade-content
+            h2.section-title Compromisso com a Privacidade
+            p.section-text Valorizamos a privacidade dos nossos usuários. Todo relato e dado compartilhado no aplicativo são tratados com respeito e conforme as diretrizes de privacidade e segurança. O Safe Street nunca compartilha informações pessoais sem o consentimento do usuário.
+            .privacy-shield
+              svg.shield-icon(viewBox="0 0 24 24")
+                path(d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1ZM12 11.99H19C18.47 16.11 15.72 19.78 12 20.93V12H5V6.3L12 3.19V11.99Z")
+
+      section.creators
+        .container
+          h2.section-title.text-center.gold-accent Conheça nossos criadores
+          .creator-grid
+            - var creators = [{ name: 'Alisson Seabra', img: 'alisson.jpeg' }, { name: 'Caio', img: 'caio.jpeg' }, { name: 'Deryck Siqueira', img: 'deryck.jpg' }, { name: 'Felipe Cesare', img: 'felipe.jpg' }, { name: 'Gabriel Felix', img: 'gabrielfelix.jpg' }, { name: 'Gabriel Sousa', img: 'freitas.jpg' }, { name: 'Guilherme Chagas', img: 'gui.jpeg' }, { name: 'João Paulo', img: 'paulo.jpg' }, { name: 'Miguel Santos', img: 'miguelsantos.jpg' }, { name: 'Miguel Teodoro', img: 'miguelteodoro.jpg' }]
+            each creator in creators
+              .creator-card
+                .creator-avatar
+                  img(src=`/img/${creator.img}`, alt=`Criador ${creator.name}`)
+                h3.creator-name= creator.name
+
+    footer.footer
+      .container
+        .footer-content
+          p.copyright © 2025 Safe Street | Todos os direitos reservados
+          .social-links
+            a.social-link(href="#", aria-label="Facebook")
+              svg.social-icon(viewBox="0 0 24 24")
+                path(d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C18.34 21.21 22 17.06 22 12.06C22 6.53 17.5 2.04 12 2.04Z")
+            a.social-link(href="#", aria-label="Twitter")
+              svg.social-icon(viewBox="0 0 24 24")
+                path(d="M22.46 6C21.69 6.35 20.86 6.58 20 6.69C20.88 6.16 21.56 5.32 21.88 4.31C21.05 4.81 20.13 5.16 19.16 5.36C18.37 4.5 17.26 4 16 4C13.65 4 11.73 5.92 11.73 8.29C11.73 8.63 11.77 8.96 11.84 9.27C8.28 9.09 5.11 7.38 3 4.79C2.63 5.42 2.42 6.16 2.42 6.94C2.42 8.43 3.17 9.75 4.33 10.5C3.62 10.5 2.96 10.3 2.38 10V10.03C2.38 12.11 3.86 13.85 5.82 14.24C5.46 14.34 5.08 14.39 4.69 14.39C4.42 14.39 4.15 14.36 3.89 14.31C4.43 16 6 17.26 7.89 17.29C6.43 18.45 4.58 19.13 2.56 19.13C2.22 19.13 1.88 19.11 1.54 19.07C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79C20.33 8.6 20.33 8.42 20.32 8.23C21.16 7.63 21.88 6.87 22.46 6Z")
+            a.social-link(href="#", aria-label="Instagram")
+              svg.social-icon(viewBox="0 0 24 24")
+                path(d="M12 2C14.717 2 15.056 2.01 16.122 2.06C17.187 2.11 17.912 2.277 18.55 2.525C19.21 2.779 19.766 3.123 20.322 3.678C20.8305 4.1779 21.224 4.78259 21.475 5.45C21.722 6.087 21.89 6.813 21.94 7.878C21.987 8.944 22 9.283 22 12C22 14.717 21.99 15.056 21.94 16.122C21.89 17.187 21.722 17.912 21.475 18.55C21.2247 19.2178 20.8311 19.8226 20.322 20.322C19.822 20.8303 19.2173 21.2238 18.55 21.475C17.913 21.722 17.187 21.89 16.122 21.94C15.056 21.987 14.717 22 12 22C9.283 22 8.944 21.99 7.878 21.94C6.813 21.89 6.088 21.722 5.45 21.475C4.78233 21.2245 4.17753 20.8309 3.678 20.322C3.16941 19.8222 2.77593 19.2175 2.525 18.55C2.277 17.913 2.11 17.187 2.06 16.122C2.013 15.056 2 14.717 2 12C2 9.283 2.01 8.944 2.06 7.878C2.11 6.812 2.277 6.088 2.525 5.45C2.77524 4.78218 3.1688 4.17732 3.678 3.678C4.17767 3.16923 4.78243 2.77573 5.45 2.525C6.088 2.277 6.812 2.11 7.878 2.06C8.944 2.013 9.283 2 12 2ZM12 7C10.6739 7 9.40215 7.52678 8.46447 8.46447C7.52678 9.40215 7 10.6739 7 12C7 13.3261 7.52678 14.5979 8.46447 15.5355C9.40215 16.4732 10.6739 17 12 17C13.3261 17 14.5979 16.4732 15.5355 15.5355C16.4732 14.5979 17 13.3261 17 12C17 10.6739 16.4732 9.40215 15.5355 8.46447C14.5979 7.52678 13.3261 7 12 7ZM18.5 6.75C18.5 6.41848 18.3683 6.10054 18.1339 5.86612C17.8995 5.6317 17.5815 5.5 17.25 5.5C16.9185 5.5 16.6005 5.6317 16.3661 5.86612C16.1317 6.10054 16 6.41848 16 6.75C16 7.08152 16.1317 7.39946 16.3661 7.63388C16.6005 7.8683 16.9185 8 17.25 8C17.5815 8 17.8995 7.8683 18.1339 7.63388C18.3683 7.39946 18.5 7.08152 18.5 6.75ZM12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9Z")
+    //Scripts
+    script(src="/ajustes/visibility-fix.js")
+    script.
+      // Menu toggle para dispositivos móveis
+      const menuToggle = document.createElement('button');
+      menuToggle.classList.add('menu-toggle');
+      menuToggle.innerHTML = '<span></span><span></span><span></span>';
+      document.querySelector('.nav-container').prepend(menuToggle);
+      
+      menuToggle.addEventListener('click', () => {
+        document.querySelector('.main-nav').classList.toggle('active');
+        menuToggle.classList.toggle('active');
+      });
+
+      // Smooth scroll para links de âncora
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+
+      // Dark mode toggle
+      const toggle = document.getElementById('toggle-dark');
+      const body = document.body;
+
+      if (localStorage.getItem('modo') === 'dark') {
+        body.classList.add('dark-mode');
+      }
+
+      toggle.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        const isDark = body.classList.contains('dark-mode');
+        localStorage.setItem('modo', isDark ? 'dark' : 'light');
+      });
+
+      // Animação de entrada para elementos quando entram na viewport
+      const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+      };
+
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-in');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll('.feature-card, .diferencial-card, .creator-card, .section-title, .hero-image').forEach(el => {
+        observer.observe(el);
+      });
+
+      // Adicionar efeito dourado a elementos importantes
+      document.addEventListener('DOMContentLoaded', function() {
+        // Adicionar classe gold-accent a elementos importantes
+        const importantElements = [
+          '.feature-title', 
+          '.diferencial-title',
+          '.creator-card:hover .creator-name'
+        ];
+        
+        // Efeito de brilho dourado em hover
+        const cards = document.querySelectorAll('.feature-card, .diferencial-card, .creator-card');
+        cards.forEach(card => {
+          card.addEventListener('mouseenter', function() {
+            this.classList.add('gold-accent');
+          });
+          
+          card.addEventListener('mouseleave', function() {
+            this.classList.remove('gold-accent');
+          });
+        });
+      });
+      
