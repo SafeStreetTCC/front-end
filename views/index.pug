@@ -70,7 +70,6 @@ html(lang="pt-BR")
         box-shadow: 0 0 0 0.25rem rgba(125, 158, 247, 0.25);
       }
 
-      /* Estilos de botões idênticos ao site principal */
       .btn {
         border-radius: var(--border-radius);
         padding: 0.375rem 0.75rem;
@@ -129,6 +128,29 @@ html(lang="pt-BR")
       .btn-success:hover {
         background-color: #0d9668;
         border-color: #0d9668;
+      }
+
+      .btn-outline-cleanroute{
+        color: black;
+        border-color: var(--azul-claro);
+        background-color: transparent;
+      }
+
+      .btn-outline-cleanroute:hover {
+        background-color: var(--azul-claro);
+        color: white;
+        border-color: var(--azul-claro);
+      }
+      .btn-outline-location{
+        color: black;
+        border-color: var(--azul-claro);
+        background-color: transparent;
+        
+      }
+      .btn-outline-location:hover{
+        background-color: var(--azul-claro);
+        color:white;
+        border-color: var(--azul-claro);
       }
       
       .btn-dark {
@@ -322,6 +344,30 @@ html(lang="pt-BR")
         border-color: var(--dourado-escuro);
         color: #121212;
       }
+
+      body.dark-mode .btn-outline-cleanroute {
+        border-color: var(--dourado);
+        color: #e0e0e0;
+        background-color: transparent;
+      }
+      
+      body.dark-mode .btn-outline-cleanroute:hover {
+        background-color: var(--dourado);
+        border-color: var(--dourado-escuro);
+        color: #121212;
+      }
+
+      body.dark-mode .btn-outline-location {
+        border-color: var(--dourado);
+        color: #e0e0e0;
+        background-color: transparent;
+      }
+      
+      body.dark-mode .btn-outline-location:hover {
+        background-color: var(--dourado);
+        border-color: var(--dourado-escuro);
+        color: #121212;
+      }
       
       body.dark-mode .btn-outline-info {
         border-color: var(--dourado);
@@ -483,8 +529,8 @@ html(lang="pt-BR")
         input.form-control#route-to(type="text", placeholder="Digite o endereço de destino")
         #to-results.address-results(style="display: none;")
       button.btn.btn-primary#calculate-route(type="button") Calcular Rota
-      button.btn.btn-outline-info#clear-route(type="button", style="margin-top: 5px;") Limpar Rota
-      button.btn.btn-outline-success#use-current-location(type="button", style="margin-top: 5px;") Usar Minha Localização
+      button.btn.btn-outline-cleanroute#clear-route(type="button", style="margin-top: 5px;") Limpar Rota
+      button.btn.btn-outline-location#use-current-location(type="button", style="margin-top: 5px;") Usar Minha Localização
     
     // Legenda da rota (inicialmente oculta)
     #route-legend.route-legend(style="display: none;")

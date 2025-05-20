@@ -222,7 +222,7 @@ ul {
   display: block;
   width: 24px;
   height: 2px;
-  background-color: var(--azul-escuro);
+  background-color: white;
   margin: 5px 0;
   transition: var(--transition);
 }
